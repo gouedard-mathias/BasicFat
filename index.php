@@ -5,6 +5,9 @@
   <title>$Title$</title>
 </head>
 <body>
+<?php
+include('_presentation.php');
+?>
 $END$
 </body>
 </html>
