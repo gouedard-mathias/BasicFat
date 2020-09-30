@@ -25,10 +25,12 @@ include('_findaclub.php');
 <?php
 include('_inscription.php');
 ?>
-  
+
 <div>
   <?php include("_contact.php"); ?>
 </div>
-
 </body>
+<footer>
+    <?php include("_footer.php"); ?>
+</footer>
 </html>
