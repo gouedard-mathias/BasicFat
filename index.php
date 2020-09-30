@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <title>$Title$</title>
 </head>
+  
 <body>
+  <header>
+        <?php include("_header.php"); ?>
+    </header>
+
 <?php
 include('_presentation.php');
 ?>
@@ -20,7 +25,10 @@ include('_findaclub.php');
 <?php
 include('_inscription.php');
 ?>
-
+  
+<div>
+  <?php include("_contact.php"); ?>
+</div>
 
 </body>
 </html>
