@@ -11,7 +11,7 @@
 <?php include("_header.php") ?>
 
 <div class="container">
-    <p> class="title"><?php echo $_GET['user_genre']; ?> <?php echo $_GET['user-firstname']; ?> <?php echo $_GET['user-lastname']; ?></p>
+    <p class="title"><?php echo $_GET['user_genre']; ?> <?php echo $_GET['user-firstname']; ?> <?php echo $_GET['user-lastname']; ?></p>
     <p><?php echo $_GET['user_email']; ?></p>
     <p><?php echo $_GET['user_phone']; ?></p>
     <p>Votre inscription a bien été prise en compte</p>
