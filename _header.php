@@ -5,7 +5,9 @@
         <li>Tarifs</li>
         <li>Présentation</li>
         <li>Coaching</li>
-        <li>Inscription</li>
+        <li>
+            <a href="_inscriptionform.php">Inscription</a>
+        </li>
         <li>Contact</li>
     </ul>
 </nav>
