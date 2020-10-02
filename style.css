@@ -55,4 +55,38 @@ button {
     padding: 10px;
     font-weight: bold;
     background-color: #865ED2
+<<<<<<< HEAD
 }*/
+
+
+
+/* header start */
+.navbar {
+    display:inline-flex;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    display: block;
+    color: #313136;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    width: 10%;
+    height: auto;
+}
+/* header end */
+
+/* inscriptionform start */
+
+/* inscriptionform end */
+

@@ -6,10 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic-Fat Inscription</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php include("_header.php") ?>
-    <form action="_inscriptionresult.php" class="inscription">
+    <header>
+        <?php include("_header.php") ?>
+    </header>
+    <form action="_inscriptionresult.php" class="inscription_form">
         <select class="user_genre" id="user_genre">
             <option>M.</option>
             <option>Mme / Mlle</option>
