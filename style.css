@@ -7,10 +7,10 @@ turquoise : #00a5ff;
 Police :
 */
 
-/*
+/* here start contact css
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 fieldset {
@@ -36,7 +36,6 @@ label {
 
 
 input, textarea, select {
-    box-sizing: ;
     border: 0px;
     padding: 10px;
     width: 35%;
@@ -56,7 +55,9 @@ button {
     padding: 10px;
     font-weight: bold;
     background-color: #865ED2
-} */
+}*/
+
+
 
 /* header start */
 *{
