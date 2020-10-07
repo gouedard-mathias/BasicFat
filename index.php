@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>$Title$</title>
+  <meta charset="UTF-8">
+  <title>BASIC FAT</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-
 
 <body>
     <?php include("_header.php"); ?>
@@ -27,8 +26,11 @@
     <div class="my-anchor" id="contact">
         <?php include("_contact.php"); ?>
     </div>
+    </main>
+
+    <footer>
+        <?php include("_footer.php"); ?>
+    </footer>
 </body>
-<footer>
-    <?php include("_footer.php"); ?>
-</footer>
 </html>
+
