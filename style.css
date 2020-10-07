@@ -4,23 +4,43 @@ violet clair background : #ededf7;
 bleu foncé : #03d5dd;
 turquoise : #00a5ff;
 
-<<<<<<< HEAD
-/* header start */
+
+*/
+/*COMMUN START HERE*/
 body{
     padding: 0;
     margin: 0;
     background-color:  #EDEDF7;
 
 }
+h2 {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color : #8005d1;
+}
 
+h2::before,
+h2::after {
+    color : #ff6500;
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 0 .5em;
+}
+/*COMMUN END HERE*/
+
+/* header start */
 .container{
     position: relative;
     margin-top: 100px;
 }
+
 .container img{
     display: block;
     width: 100%;
 }
+
 nav{
     position: fixed;
     z-index: 10;
@@ -31,6 +51,7 @@ nav{
     height: 100px;
     background: blue;
 }
+
 nav .logo_container{
     float: left;
     width: 40%;
@@ -40,6 +61,7 @@ nav .logo_container{
     font-size: 24px;
     color: #fff;
 }
+
 .nav-links{
     float: right;
     padding: 0;
@@ -50,9 +72,11 @@ nav .logo_container{
     justify-content: space-around;
     align-items: center;
 }
+
 .nav-links li{
     list-style: none;
 }
+
 .nav-links a{
     display: block;
     padding: 1em;
@@ -283,10 +307,6 @@ div#slider figure img {
     padding: 0 0 2em 12em;
 }
 
-
-/* CARDS */
-
-
 .card{
     margin: 3.5em 4em 0 0;
     width: 330px;
@@ -418,6 +438,11 @@ hr{
 .coachFlex{
     display: flex;
 }
+
+.sandwich{
+    display: inline-block;
+}
+
 .map{
 
 }
@@ -539,237 +564,6 @@ hr{
 /*END BODY*/
 
 
-
-
-
-h2 {
-    align-items: center;
-    display: flex;
-    text-align: center;
-    color : #8005d1;
-}
-
-h2::before,
-h2::after {
-    color : #ff6500;
-    border-top: .0625em solid;
-    content: "";
-    flex: 1;
-    margin: 0 .5em;
-}
-
-
-.contact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.contact_fieldset {
- padding:0 20px 20px 20px;
- margin-bottom:10px;
- border:5px solid #F36027 ;
- background-color: #EDEDF7;
-}
-
-legend {
-  color: #865ED2;
-  font-weight: bold;
-}
-
-.form_contact {
-  width:40%;
-  padding:10px;
-}
-
-.form_contact label {
- margin-top:10px;
- display:block;
-}
-
-.form_contact input, textarea, select {
-  border: 0;
-  padding: 10px;
-  width: 50%;
-}
-
-.form_contact textarea {
-  width: 80%;
-}
-
-.div_contact_button {
- display: flex;
- justify-content : center;
- }
-
-.contact_button {
-   color: white;
-   cursor:pointer;
-  padding: 10px;
-  font-weight: bold;
-  background-color: #865ED2;
-  border-radius: 20px;
-}
-
-.img_contact {
-  border-radius: 15px;
-}
-
-.sandwich{
-    display: inline-block;
-}
-
-.map{
-    padding-left: 20em;
-}
-
-@media screen and (max-width: 1200px) {
-    .form_contact {
-        text-align: center;
-    }
-    .form_contact input, textarea, select {
-        width: 80%;
-    }
-
-    .form_contact textarea {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 992px) {
-    .contact {
-        display: block;
-        text-align: center;
-    }
-    .form_contact {
-        margin : 0 auto;
-        width: 80%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width : 767px) {
-    .img_contact {
-        max-width:100%;
-        height:auto;
-    }
-}
-
-/*HERE END CONTACT CSS*/
-
-
-
-/* HERE START THANKS CSS*/
-body {
-  background-color:  #EDEDF7;
-}
-
-.thanks {
-  display: flex;
-  justify-content : space-around;
-  align-items : center;
-  border-radius: 10%;
-}
-
-.title_thanks {
-    color : #865ED2;
-    margin: 15px;
-    white-space: nowrap;
-}
-
-.p_thanks {
-  background-color :  #F36027;
-  padding: 60px;
-  color: white;
-  border-radius : 10px 100px / 120px;
-}
-
-.div_img_thanks{
-    text-align: center;
-}
-
-.img_thanks {
-    border-radius: 15px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-@media screen and (max-width: 992px) {
-    .thanks {
-        display: block;
-        text-align: center;
-    }
-    .p_thanks {
-        padding: 50px;
-    }
-    .title_thanks {
-        margin: 25px;
-    }
-}
-
-@media screen and (max-width : 767px) {
-    .img_thanks {
-        max-width:100%;
-        height:auto;
-    }
-}
-
- /*HERE END THANKS CSS*/
-
-
-
-/* header start */
-
-.container{
-    position: relative;
-    margin-top: 100px;
-}
-.container img{
-    display: block;
-    width: 100%;
-}
-nav{
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding: 0 5%;
-    height: 100px;
-    background: blue;
-}
-nav .logo{
-    float: left;
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    color: #fff;
-}
-.nav-links{
-    float: right;
-    padding: 0;
-    margin: 0;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav-links li{
-    list-style: none;
-}
-.nav-links a{
-    display: block;
-    padding: 1em;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-}
-
-
-
 /* inscription START HERE*/
 
 .flexbox_item_inscription {
@@ -805,9 +599,6 @@ nav .logo{
 
 }
 
-@media screen and (max-width: 767px) {
-
-}
 /* inscription END HERE */
 
 /* inscriptionform start */
@@ -894,9 +685,9 @@ nav .logo{
         width: 80%;
     }
 }
+/*inscriptionform END HERE*/
 
 /*_inscriptionresult START HERE*/
-
 
 .inscription_result {
     display: flex;
