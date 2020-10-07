@@ -4,469 +4,155 @@ violet clair background : #ededf7;
 bleu foncé : #03d5dd;
 turquoise : #00a5ff;
 
-Police :
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* header start */
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    position: relative;
+    margin-top: 100px;
+}
+.container img{
+    display: block;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+    background: blue;
+}
+nav .logo_container{
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+.nav-links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+
+}
+nav .burger div{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    nav .logo_container{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    .nav-links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0,0,0,8);
+        overflow: hidden;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+    }
+    .nav-links a{
+        font-size: 20px;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    nav .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(225deg) translateY(-11px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(-225deg) translateY(11px) ;
+}
+/* header end */
 
 
 /* START BODY */
 
 @font-face {
-    font-family: "Nanum Gothic";
+    /*font-family: 'Nanum Gothic';
     src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-    font-family: "Noto Sans KR, sans-serif";
-    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+    font-family: 'Noto Sans KR, sans-serif';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');*/
 
     font-family: 'Fugaz One', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');;
+}
+
+main{
+    margin-top: 6em;
 }
 
 body {
@@ -474,6 +160,7 @@ body {
     background-color : white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     }
 
 p{
@@ -519,8 +206,8 @@ div#slider figure img {
 }
 
 @keyframes slidy {
-    0% { left: 0%; }
-    10% { left: 0%; }
+    0% { left: 0; }
+    10% { left: 0; }
     30% { left: -100%; }
     40% { left: -100%; }
     60% { left: -200%; }
@@ -530,17 +217,16 @@ div#slider figure img {
     100% { left: -400%; }
 }
 
-
 .inlineElements{
-    display : block;
+    display: inline-block;
 }
-
 .presentation{
     text-align: center;
-    width: 81%;
+    width: 34%;
     padding-inline-start: 7em;
-    /* margin: 1em 0 -1em 0; */
-    padding: 5em 0 2em 9em;
+    padding: 12em 0 2em 55em;
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -555,20 +241,18 @@ div#slider figure img {
 .imgPresentation{
    padding-top: 4.5em;
     position: relative;
-
-
 }
+
 .blockText{
     display : flex;
     width: 32%;
     flex-direction : column;
     position: absolute;
     text-align: center;
-
 }
 
 .blockPresentation{
-    padding: 9em 0em 0 57em;
+    padding: 9em 0 0 57em;
 }
 
 .titlePresentation {
@@ -631,7 +315,7 @@ div#slider figure img {
     background-size: cover;
     background-position: 50% 50%;
     filter: brightness(90%);
-    box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 .cardTitle{
     grid-area: 3 / 1 / 4 / 4;
@@ -671,10 +355,6 @@ hr{
     margin-right: 10px;
 }
 
-span{
-    font-weight: 600;
-}
-
 .info{
     grid-area: 5 / 1 / 6 / 4;
     padding: 5px 25px;
@@ -705,11 +385,8 @@ span{
     align-items: center;
     color: #e2e2e2;
     border-radius: 5px;
+}
 
-}
-.inlineElements{
-    display: block;
-}
 .blockCoaching{
     padding-left: 55em;
 }
@@ -744,19 +421,14 @@ span{
 }
 
 
-
-
-
-
-/* MEDIAS QUERIES */
-
-@media screen and (min-width: 767px) and (max-width:992px){
-
-
+@media screen and (min-width: 767px) and (max-width:992px) {
+    .inlineElements{
+        padding-block-start: 50em;
+    }
     .presentation{
         text-align: center;
         width: 80%;
-        padding: 2.7em 0em 0 6em;
+        padding: 2.7em 0 0 6.5em;
     }
     .presentationText{
         font-size: 3.8vw;
@@ -764,7 +436,7 @@ span{
     .carre {
         width: 90%;
         transform: skew(-20deg);
-        border-radius: 3% 0% 3% 0%;
+        border-radius: 3% 0 3% 0;
     }
 
     .titlePresentation{
@@ -862,5 +534,326 @@ span{
 
 }
 
-
 /*END BODY*/
+
+
+
+/*HERE START CONTACT CSS */
+
+
+.contact_title{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color : #8005d1;
+}
+
+.contact_title::before,
+.contact_title::after {
+    color : #ff6500;
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 0 .5em;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact_fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:5px solid #F36027 ;
+ background-color: #EDEDF7;
+}
+
+legend {
+  color: #865ED2;
+  font-weight: bold;
+}
+
+.form_contact {
+  width:40%;
+  padding:10px;
+}
+
+.form_contact label {
+ margin-top:10px;
+ display:block;
+}
+
+.form_contact input, textarea, select {
+  border: 0;
+  padding: 10px;
+  width: 50%;
+}
+
+.form_contact textarea {
+  width: 80%;
+}
+
+.div_contact_button {
+ display: flex;
+ justify-content : center;
+ }
+
+.contact_button {
+   color: white;
+   cursor:pointer;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #865ED2;
+  border-radius: 20px;
+}
+
+.img_contact {
+  border-radius: 15px;
+}
+
+.sandwich{
+    display: inline-block;
+}
+
+.map{
+    padding-left: 20em;
+}
+
+@media screen and (max-width: 1200px) {
+    .form_contact {
+        text-align: center;
+    }
+    .form_contact input, textarea, select {
+        width: 80%;
+    }
+
+    .form_contact textarea {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .contact {
+        display: block;
+        text-align: center;
+    }
+    .form_contact {
+        margin : 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .img_contact {
+        max-width:100%;
+        height:auto;
+    }
+}
+
+/*HERE END CONTACT CSS*/
+
+
+
+/* HERE START THANKS CSS*/
+body {
+  background-color:  #EDEDF7;
+}
+
+.thanks {
+  display: flex;
+  justify-content : space-around;
+  align-items : center;
+  border-radius: 10%;
+}
+
+.title_thanks {
+    color : #865ED2;
+    margin: 15px;
+    white-space: nowrap;
+}
+
+.p_thanks {
+  background-color :  #F36027;
+  padding: 60px;
+  color: white;
+  border-radius : 10px 100px / 120px;
+}
+
+.div_img_thanks{
+    text-align: center;
+}
+
+.img_thanks {
+    border-radius: 15px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 992px) {
+    .thanks {
+        display: block;
+        text-align: center;
+    }
+    .p_thanks {
+        padding: 50px;
+    }
+    .title_thanks {
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .img_thanks {
+        max-width:100%;
+        height:auto;
+    }
+}
+
+ /*HERE END THANKS CSS*/
+
+
+
+
+/* inscriptionform start */
+.div_inscription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fieldset_inscription {
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:5px solid #F36027 ;
+    background-color: #EDEDF7;
+}
+
+.inscription_legend {
+    color: #865ED2;
+    font-weight: bold;
+}
+
+.form_inscription {
+    width:450px;
+    height: 600px;
+    padding:10px;
+    margin-top: 40px;
+}
+
+.form_inscription label {
+    margin-top:10px;
+    display:block;
+}
+
+.form_inscription input, select {
+    border: 0;
+    padding: 10px;
+    width: 60%;
+}
+
+.div_inscription_button {
+    display: flex;
+    justify-content : center;
+}
+
+.inscription_button {
+    color: white;
+    cursor:pointer;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #865ED2;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.img_inscription {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 15px;
+}
+@media screen and (max-width: 1200px) {
+    .div_inscription {
+        display: block;
+        text-align: center;
+    }
+    .form_inscription {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+    .img_inscription {
+        max-width:100%;
+        height:auto;
+    }
+    .form_inscription input, select {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .form_inscription {
+        width: 60%;
+    }
+    .form_inscription input, select {
+        width: 80%;
+    }
+}
+
+/*_inscriptionresult START HERE*/
+body {
+    background-color:  #EDEDF7;
+}
+
+.inscription_result {
+    display: flex;
+    justify-content : space-around;
+    align-items : center;
+    border-radius: 10%;
+}
+
+.title_inscription_result {
+    color : #865ED2;
+    margin: 15px;
+    white-space: nowrap;
+}
+
+.p_result {
+    background-color :  #F36027;
+    padding: 60px;
+    color: white;
+    border-radius : 10px 100px / 120px;
+}
+
+.div_img_result{
+    text-align: center;
+}
+
+.img_result {
+    border-radius: 15px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 992px) {
+    .inscription_result {
+        display: block;
+        text-align: center;
+    }
+    .p_result {
+        padding: 50px;
+    }
+    .title_inscription_result  {
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .img_result {
+        max-width:100%;
+        height:auto;
+    }
+}
+/* _inscriptionresult END HERE */
+
