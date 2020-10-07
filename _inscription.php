@@ -1,8 +1,15 @@
-<h2>INSCRIPTION</h2>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    <form action="_inscriptionform.php">
-        <button type="submit">Inscris-toi !</button>
-    </form>
-<img src="https://via.placeholder.com/400x400" alt="//">
+<div class="inscription_item">
 
-<hr>
+
+    <h2>INSCRIPTION</h2>
+    <div class="flexbox_item_inscription">
+        <div>
+            <img class="img_bf_inscription" src="https://www.basic-fit.com/on/demandware.static/-/Library-Sites-basic-fit-shared-library/default/dw21a13ed0/Roots/Content_Website/Commercial_banners/Commercial-Banner_General.png" alt="photo d'inscription">
+        </div>
+        <div>
+            <b>« Some people want it to happen, some wish it would happen, others make it happen.» </b> <br> <p>Michael Jordan.</p>
+            <a href="_inscriptionform.php"> <input class="item_inscription_button" type="button" value="Inscris-toi !"></a>
+        </div>
+    </div>
+</div>
+
