@@ -455,9 +455,38 @@ hr{
 }
 
 .map{
-
+    padding-left: 1em;
 }
 
+.findAClubTitle{
+    padding-left: 15em;
+    margin: 0.7em 1em 0 0;
+    position: absolute;
+}
+
+.sandwich{
+    display: inline-block;
+}
+
+.facImg{
+    padding-inline-start: 10em;
+    position: absolute;
+    z-index: 1;
+    padding-block-start: 8em;
+}
+
+.facImg a{
+    margin-right: 2.5em;
+}
+
+.facImg a img{
+    padding-top: 4em;
+}
+
+iframe{
+    position: relative;
+    z-index: 2;
+}
 
 @media screen and (min-width: 767px) and (max-width:992px) {
     .inlineElements{
@@ -564,13 +593,6 @@ hr{
     }
 }
 
-@media(min-width:992px){
-
-}
-
-@media(min-width:1200px){
-
-}
 
 /*END BODY*/
 
@@ -597,19 +619,19 @@ hr{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
     .flexbox_item_inscription {
         display: block;
         text-align: center;
         margin: 20px 0;
     }
+
     .img_bf_inscription {
-        max-width:100%;
-        height:auto;
+        max-width: 100%;
+        height: auto;
     }
-
 }
-
 /* inscription END HERE */
 
 /* inscriptionform start */

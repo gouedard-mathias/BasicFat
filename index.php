@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BASIC FAT</title>
-    <link href="style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<title>BASIC FAT</title>
 </head>
 
 <body>
-    <?php include("_header.php"); ?>
+
     <div class="my-anchor" id="presentation">
+    <?php include('_header.php'); ?>
+    </div>
+
+        <main>
+    <div id="presentation">
+
         <?php include('_presentation.php'); ?>
     </div>
     <div class="my-anchor" id="tarif">
@@ -29,7 +35,7 @@
     </main>
 
     <footer>
-        <?php include("_footer.php"); ?>
+        <?php include('_footer.php'); ?>
     </footer>
 </body>
 </html>
