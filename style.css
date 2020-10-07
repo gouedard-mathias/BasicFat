@@ -197,7 +197,7 @@ nav{
     height: 100px;
     background: blue;
 }
-nav .logo{
+nav .logo_container{
     float: left;
     width: 40%;
     height: 100%;
@@ -246,7 +246,7 @@ nav .burger div{
 }
 
 @media screen and (max-width: 768px){
-    nav .logo{
+    nav .logo_container{
         float: none;
         width: auto;
         justify-content: center;
