@@ -1,6 +1,4 @@
-
-
-</div><div  class="carousel" id="slider">
+<div  class="carousel" id="slider">
     <figure>
         <img src="https://i.postimg.cc/XJJbkXvg/man-lifts-bar-bell.png" alt="##">
         <img src="https://i.postimg.cc/66MKqrY1/woman-lifts-free-weights.png" alt="##">

@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BASIC FAT</title>
-    <link href="style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<title>BASIC FAT</title>
 </head>
 
 <body>
-    <div>
     <?php include('_header.php'); ?>
-    </div>
     <main>
     <div id="presentation">
         <?php include('_presentation.php'); ?>
@@ -27,12 +25,12 @@
         <?php include('_inscription.php'); ?>
     </div>
     <div id="contact">
-        <?php include("_contact.php"); ?>
+        <?php include('_contact.php'); ?>
     </div>
     </main>
 
     <footer>
-        <?php include("_footer.php"); ?>
+        <?php include('_footer.php'); ?>
     </footer>
 </body>
 </html>
