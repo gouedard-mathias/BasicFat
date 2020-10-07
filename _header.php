@@ -1,26 +1,28 @@
 <header>
     <nav>
         <div class="logo_container">
-            <img src="https://i.postimg.cc/1XCXt1zn/logo-copie-1.png" alt="logo" class="logo">
+            <a href="index.php">
+                <img src="https://i.postimg.cc/1XCXt1zn/logo-copie-1.png" alt="logo" class="logo">
+            </a>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#find_a_club">Club</a>
+                <a href="index.php#find_a_club">Club</a>
             </li>
             <li>
-                <a href="#tarif">Tarifs</a>
+                <a href="index.php#tarif">Tarifs</a>
             </li>
             <li>
-                <a href="#presentation">Présentation</a>
+                <a href="index.php#presentation">Présentation</a>
             </li>
             <li>
-                <a href="#coaching">Coaching</a>
+                <a href="index.php#coaching">Coaching</a>
             </li>
             <li>
                 <a href="_inscriptionform.php">Inscription</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="index.php#contact">Contact</a>
             </li>
         </ul>
         <div class="burger">
@@ -31,3 +33,4 @@
     </nav>
     <script src="app.js"></script>
 </header>
+<section class="top-anchor"></section>

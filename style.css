@@ -187,6 +187,13 @@ body{
     display: block;
     width: 100%;
 }
+.my-anchor{
+    padding-top: 100px;
+    margin-top: -100px;
+}
+.top-anchor{
+    padding-top: 100px;
+}
 nav{
     position: fixed;
     z-index: 10;
@@ -245,7 +252,7 @@ nav .burger div{
     transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 850px){
     nav .logo_container{
         float: none;
         width: auto;
@@ -280,6 +287,9 @@ nav .burger div{
 }
 .nav-active{
     transform: translateX(0%);
+}
+.nav-desactive{
+    transform: translateX(100%);
 }
 @keyframes navLinkFade {
     from{
