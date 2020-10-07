@@ -7,60 +7,174 @@ turquoise : #00a5ff;
 Police :
 */
 
-/* here start contact css
+/*HERE START CONTACT CSS */
+
+
+.contact_title{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color : #8005d1;
+}
+
+.contact_title::before,
+.contact_title::after {
+    color : #ff6500;
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 0 .5em;
+}
+
 .contact {
-    display: flex;
-    justify-content: space-between
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-fieldset {
-    padding:0 20px 20px 20px;
-    margin-bottom:10px;
-    border:5px solid #F36027 ;
-    background-color: #EDEDF7;
+.contact_fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:5px solid #F36027 ;
+ background-color: #EDEDF7;
 }
+
 legend {
-    color: #865ED2;
-    font-weight: bold;
+  color: #865ED2;
+  font-weight: bold;
 }
 
-form {
-    width:50%;
-    padding:10px;
-
-}
-label {
-    margin-top:10px;
-    display:block;
+.form_contact {
+  width:40%;
+  padding:10px;
 }
 
-
-input, textarea, select {
-    border: 0px;
-    padding: 10px;
-    width: 35%;
-
-}
-textarea {
-    width: 60%;
-}
-.button {
-    display: flex;
-    justify-content : center;
+.form_contact label {
+ margin-top:10px;
+ display:block;
 }
 
-button {
-    color: white;
-    cursor:pointer;
-    padding: 10px;
-    font-weight: bold;
-    background-color: #865ED2
-<<<<<<< HEAD
-}*/
+.form_contact input, textarea, select {
+  border: 0;
+  padding: 10px;
+  width: 50%;
+}
+
+.form_contact textarea {
+  width: 80%;
+}
+
+.div_contact_button {
+ display: flex;
+ justify-content : center;
+ }
+
+.contact_button {
+   color: white;
+   cursor:pointer;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #865ED2;
+  border-radius: 20px;
+}
+
+.img_contact {
+  border-radius: 15px;
+}
+@media screen and (max-width: 1200px) {
+    .form_contact {
+        text-align: center;
+    }
+    .form_contact input, textarea, select {
+        width: 80%;
+    }
+
+    .form_contact textarea {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .contact {
+        display: block;
+        text-align: center;
+
+    }
+    .form_contact {
+        margin : 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .img_contact {
+        max-width:100%;
+        height:auto;
+    }
+}
+
+/*HERE END CONTACT CSS*/
 
 
 
-/* header start */
+/* HERE START THANKS CSS*/
+body {
+  background-color:  #EDEDF7;
+}
+
+.thanks {
+  display: flex;
+  justify-content : space-around;
+  align-items : center;
+  border-radius: 10%;
+}
+
+.title_thanks {
+    color : #865ED2;
+    margin: 15px;
+    white-space: nowrap;
+}
+
+.p_thanks {
+  background-color :  #F36027;
+  padding: 60px;
+  color: white;
+  border-radius : 10px 100px / 120px;
+}
+
+.div_img_thanks{
+    text-align: center;
+}
+
+.img_thanks {
+    border-radius: 15px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 992px) {
+    .thanks {
+        display: block;
+        text-align: center;
+    }
+    .p_thanks {
+        padding: 50px;
+    }
+    .title_thanks {
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .img_thanks {
+        max-width:100%;
+        height:auto;
+    }
+}
+
+ /*HERE END THANKS CSS*/
+
+/* header start
 .navbar {
     display:inline-flex;
     overflow: hidden;
@@ -84,9 +198,151 @@ button {
     width: 10%;
     height: auto;
 }
-/* header end */
+ header end */
 
 /* inscriptionform start */
+.div_inscription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fieldset_inscription {
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:5px solid #F36027 ;
+    background-color: #EDEDF7;
+}
+
+.inscription_legend {
+    color: #865ED2;
+    font-weight: bold;
+}
+
+.form_inscription {
+    width:450px;
+    height: 600px;
+    padding:10px;
+    margin-top: 40px;
+}
+
+.form_inscription label {
+    margin-top:10px;
+    display:block;
+}
+
+.form_inscription input, select {
+    border: 0;
+    padding: 10px;
+    width: 60%;
+}
+
+.div_inscription_button {
+    display: flex;
+    justify-content : center;
+}
+
+.inscription_button {
+    color: white;
+    cursor:pointer;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #865ED2;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.img_inscription {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 15px;
+}
+@media screen and (max-width: 1200px) {
+    .div_inscription {
+        display: block;
+        text-align: center;
+    }
+    .form_inscription {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+    .img_inscription {
+        max-width:100%;
+        height:auto;
+    }
+    .form_inscription input, select {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .form_inscription {
+        width: 60%;
+    }
+    .form_inscription input, select {
+        width: 80%;
+    }
+}
+
 
 /* inscriptionform end */
 
+
+/*_inscriptionresult START HERE*/
+body {
+    background-color:  #EDEDF7;
+}
+
+.inscription_result {
+    display: flex;
+    justify-content : space-around;
+    align-items : center;
+    border-radius: 10%;
+}
+
+.title_inscription_result {
+    color : #865ED2;
+    margin: 15px;
+    white-space: nowrap;
+}
+
+.p_result {
+    background-color :  #F36027;
+    padding: 60px;
+    color: white;
+    border-radius : 10px 100px / 120px;
+}
+
+.div_img_result{
+    text-align: center;
+}
+
+.img_result {
+    border-radius: 15px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 992px) {
+    .inscription_result {
+        display: block;
+        text-align: center;
+    }
+    .p_result {
+        padding: 50px;
+    }
+    .title_inscription_result  {
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .img_result {
+        max-width:100%;
+        height:auto;
+    }
+}
+
+
+/* _inscriptionresult END HERE */
