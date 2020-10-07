@@ -7,26 +7,23 @@
 </head>
 
 <body>
-    <div>
-    <?php include('_header.php'); ?>
-    </div>
-    <main>
-    <div id="presentation">
+    <?php include("_header.php"); ?>
+    <div class="my-anchor" id="presentation">
         <?php include('_presentation.php'); ?>
     </div>
-    <div id="tarif">
+    <div class="my-anchor" id="tarif">
         <?php include('_prices.php'); ?>
     </div>
-    <div id="coaching">
+    <div class="my-anchor" id="coaching">
         <?php include('_coaching.php'); ?>
     </div>
-    <div id="find_a_club">
+    <div class="my-anchor" id="find_a_club">
         <?php include('_findaclub.php'); ?>
     </div>
-    <div id="inscription">
+    <div class="my-anchor" id="inscription">
         <?php include('_inscription.php'); ?>
     </div>
-    <div id="contact">
+    <div class="my-anchor" id="contact">
         <?php include("_contact.php"); ?>
     </div>
     </main>
