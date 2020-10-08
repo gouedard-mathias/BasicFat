@@ -118,6 +118,10 @@ nav .burger div{
         width: auto;
         justify-content: center;
     }
+    .logo{
+        width: 150px;
+        height: auto;
+    }
     .nav-links{
         float: none;
         position: fixed;
@@ -940,7 +944,7 @@ footer {
     font-size: 14px;
     font-family: Argumentum-Regular, sans-serif;
     margin: 2em 4em 2em 4em;
-    padding: 2em 0em 0em 0em;
+    padding: 2em 0 0 0;
     display:flex;
     justify-content: flex-start;
     text-decoration: none;
@@ -980,7 +984,7 @@ footer {
     justify-content:space-between;
 }
 /* format Mobile*/
-@media screen and (max-width:992px) {
+@media screen and (max-width:1002px) {
     footer {
         display: block;
     }
@@ -989,7 +993,7 @@ footer {
         font-size: 38px;
         font-family: Argumentum-Regular, sans-serif;
         margin: 1em 0 0 0;
-        padding: 0.5em 0em 0em 0em;
+        padding: 0.5em 0 0 0;
         display: flex;
         justify-content: center;
     }

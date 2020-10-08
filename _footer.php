@@ -11,10 +11,10 @@
     <div class="followUs">
         <h3 class="followUsTitle">REJOIGNEZ-NOUS</h3>
         <div class="followUsLogo">
-            <a href="https://fr-fr.facebook.com/" type="img"><img src="img/RS/facebook.png"></a>
-            <a href="https://www.instagram.com/?hl=fr" type="img"><img src="img/RS/insta.png"></a>
-            <a href="https://twitter.com/?lang=fr" type="img"><img src="img/RS/twitter.png"></a>
-            <a href="https://twitter.com/?lang=fr" type="img"><img src="img/RS/tinder1.png"></a>
+            <a href="https://fr-fr.facebook.com/" type="img"><img src="https://i.postimg.cc/kGvbZW8P/facebook.png"></a>
+            <a href="https://www.instagram.com/?hl=fr" type="img"><img src="https://i.postimg.cc/vHXntLbW/insta.png"></a>
+            <a href="https://twitter.com/?lang=fr" type="img"><img src="https://i.postimg.cc/G3FGHnfg/tinder1.png"></a>
+            <a href="https://twitter.com/?lang=fr" type="img"><img src="https://i.postimg.cc/HsT5MPDY/twitter.png"></a>
         </div>
     </div>
     <div>
