@@ -7,14 +7,10 @@
 </head>
 
 <body>
-
     <div class="my-anchor" id="presentation">
     <?php include('_header.php'); ?>
     </div>
-
-        <main>
     <div id="presentation">
-
         <?php include('_presentation.php'); ?>
     </div>
     <div class="my-anchor" id="tarif">
@@ -32,8 +28,6 @@
     <div class="my-anchor" id="contact">
         <?php include("_contact.php"); ?>
     </div>
-    </main>
-
     <footer>
         <?php include('_footer.php'); ?>
     </footer>
