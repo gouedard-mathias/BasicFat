@@ -188,9 +188,6 @@ nav .burger div{
     src: url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');;
 }
 
-main{
-    margin-top: 6em;
-}
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
@@ -273,11 +270,14 @@ div#slider figure img {
     background-color: #8b0000;
     position: absolute;
     transform:skew(-40deg);
+
 }
 
 .imgPresentation{
    padding-top: 4.5em;
     position: relative;
+    max-width:100%;
+    height:auto;
 }
 
 .blockText{
@@ -459,7 +459,7 @@ hr{
 }
 
 .findAClubTitle{
-    padding-left: 15em;
+    padding-left: 12.5em;
     margin: 0.7em 1em 0 0;
     position: absolute;
 }
@@ -469,18 +469,21 @@ hr{
 }
 
 .facImg{
-    padding-inline-start: 10em;
+    padding-inline-start: 9em;
     position: absolute;
     z-index: 1;
-    padding-block-start: 8em;
+    padding-block-start: 10em;
+}
 }
 
 .facImg a{
     margin-right: 2.5em;
+
 }
 
-.facImg a img{
+.facImg a img {
     padding-top: 4em;
+    padding-right: 2em;
 }
 
 iframe{
@@ -488,22 +491,32 @@ iframe{
     z-index: 2;
 }
 
-@media screen and (min-width: 767px) and (max-width:992px) {
+@media screen and (max-width:1200px) {
     .inlineElements{
-        padding-block-start: 50em;
+        padding-block-start: 28em;
     }
+
+    .imgPresentation{
+        max-width: 90%;
+    }
+    .coachingStart{
+        padding-block-start: 0;
+    }
+
     .presentation{
         text-align: center;
         width: 80%;
-        padding: 2.7em 0 0 6.5em;
+        padding: 2.7em 0 0 4em;
     }
+
     .presentationText{
-        font-size: 3.8vw;
+        font-size: 3.3vw;
     }
     .carre {
         width: 90%;
         transform: skew(-20deg);
         border-radius: 3% 0 3% 0;
+        height: 26.7em;
     }
 
     .titlePresentation{
