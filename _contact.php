@@ -3,10 +3,10 @@
 <div class="contact">
     <form class="form_contact" action="thanks.php" method="post">
         <fieldset class="contact_fieldset">
-            <legend class="contact_legend"> <h2>Nous sommes à votre écoute</h2></legend>
+            <legend class="contact_legend"> <h3>Nous sommes à votre écoute</h3></legend>
             <div>
                 <label for="user_name"> Nom</label>
-                <input type="text" id="user_name" name="user_name" required placeholder="Nom Prénom" autofocus="">
+                <input type="text" id="user_name" name="user_name" required placeholder="Nom Prénom" >
             </div>
             <div>
                 <label for="user_email"> Email</label>

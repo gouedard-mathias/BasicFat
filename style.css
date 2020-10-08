@@ -12,6 +12,8 @@ body{
     padding: 0;
     margin: 0;
     background-color:  #EDEDF7;
+    font-family: Argumentum-Regular,sans-serif;
+
 
 }
 h2 {
@@ -27,7 +29,11 @@ h2::after {
     border-top: .0625em solid;
     content: "";
     flex: 1;
-    margin: 0 .5em;
+    margin: 0.5em;
+}
+
+h3 {
+    font-size: 2vw;
 }
 /*COMMUN END HERE*/
 
@@ -303,128 +309,73 @@ div#slider figure img {
     margin: 0;
 }
 
-
-.pricesSection{
+.container-cards {
+    width: 90%;
+    margin: 50px auto;
+}
+.row {
     display: flex;
-    justify-content: space-between;
-    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
-
-.pricesTitle{
-    display: inline-block;
-    height: 1em;
-    padding-left: 3em;
-    margin-bottom: 0;
+.imgCard {
+    margin : 0 auto;
+    width :100%;
+    border-radius: 10px 10px 0 0;
 }
-
-.cardContainer{
-    display: inline-flex;
-    justify-content: space-between;
-    padding: 0 0 2em 12em;
+.card {
+    width: 25%;
+    background: #fff;
+    border: 1px solid #FF6500;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 10px;
 }
-
-.card{
-    margin: 3.5em 4em 0 0;
-    width: 330px;
-    height: 580px;
-    z-index: 1;
-    background: #8b0000;
-    display: grid;
-    grid-template: repeat(2, 100px) 50px repeat(2, 100px) 80px / repeat(3, 110px);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.img1{
-    background: url("https://i.postimg.cc/XJJbkXvg/man-lifts-bar-bell.png");
-}
-
-.img2{
-    background: url("https://i.postimg.cc/XJJbkXvg/man-lifts-bar-bell.png");
-}
-
-.img3{
-    background: url("https://i.postimg.cc/XJJbkXvg/man-lifts-bar-bell.png");
-}
-
-.divImg{
-    /* début rangée / début col / fin rang / fin col */
-    grid-area: 1 / 1 / 3 / 4;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: brightness(90%);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-}
-.cardTitle{
-    grid-area: 3 / 1 / 4 / 4;
-    font-size: 24px;
-    font-weight: 500;
-    padding: 20px;
-
-}
-.cardTitle p{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-weight: bold;
-    font-size: 2vw;
-}
-
-hr{
-    opacity: 0.8;
-}
-.priceCard{
-    grid-area: 4 / 1 / 4 / 4;
-    font-size: 3.3em;
-    color: darkorange;
+.card-header {
     text-align: center;
-    padding: 0.6em 0.3em 0 0;
-    font-weight: bold;
 }
-
-.priceCard p{
-    margin: 0;
-    padding: 0.4em 0 0 0.5em;
-    font-size: 3.5vw;
-    line-height: 1em;
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #FF6500;
 }
-
-.icon{
-    width: 24px;
-    margin-right: 10px;
-}
-
-.info{
-    grid-area: 5 / 1 / 6 / 4;
-    padding: 5px 25px;
-    font-size: 1.17vw;
-    text-align: justify;
-    line-height: 1.3em;
-}
-
-.info p{
-    font-size: 1.25vw;
-}
-
-.btnSection{
-    grid-area: 6 / 1 / 7 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-block-start: 5.6em;
-}
-
-.btnSection a {
-    width: 200px;
-    height: 36px;
-    background: #000000;
+.card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color : #8005D1;
+    margin-top: 30px;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #e2e2e2;
-    border-radius: 5px;
+    padding: 10px 5px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
 }
 
+
+
+
+@media screen and (max-width: 620px) {
+    .container-cards {
+        width: 100%;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+}
+/*
 .blockCoaching{
     padding-left: 55em;
 }
@@ -432,8 +383,8 @@ hr{
 .coachImg{
     display: flex;
     flex-flow: column wrap;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .blockCoaching{
@@ -450,6 +401,7 @@ hr{
 .coachImg img{
     padding: 1.3em 0 1.5em 1.5em;
     margin-left: 4em;
+    border-radius: 25em;
 }
 .coachFlex{
     display: flex;
@@ -463,15 +415,6 @@ hr{
     padding-left: 1em;
 }
 
-.findAClubTitle{
-    padding-left: 12.5em;
-    margin: 0.7em 1em 0 0;
-    position: absolute;
-}
-
-.sandwich{
-    display: inline-block;
-}
 
 .facImg{
     padding-inline-start: 9em;
@@ -479,7 +422,7 @@ hr{
     z-index: 1;
     padding-block-start: 10em;
 }
-}
+
 
 .facImg a{
     margin-right: 2.5em;
@@ -490,10 +433,38 @@ hr{
     padding-top: 4em;
     padding-right: 2em;
 }
+*/
+.flex-club {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+}
 
+.sandwich-facImg {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+}
 iframe{
     position: relative;
     z-index: 2;
+}
+
+.flexElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coachImg{
+    display: flex;
+
+}
+
+.coachText{
+    margin: 20px;
+
 }
 
 @media screen and (max-width:1200px) {
@@ -504,9 +475,9 @@ iframe{
     .imgPresentation{
         max-width: 90%;
     }
-    .coachingStart{
+    /*.coachingStart{
         padding-block-start: 0;
-    }
+    }*/
 
     .presentation{
         text-align: center;
@@ -526,90 +497,46 @@ iframe{
 
     .titlePresentation{
         font-size: 7vw;
-        padding: 0.4em 0 0.2em 0.8em;
+        padding: 0.4em 0 0.2em 0.4em;
         margin: 0;
     }
-    .pricesTitle{
-        display: block;
-        height: 1em;
-        margin-bottom: 0;
-        text-align: center;
-        padding: 0.5em 0 0 0;
-    }
-    .card{
-        width: 650px;
-        height: 630px;
-        grid-template-rows: repeat(2, 100px) 50px repeat(2, 100px) 80px;
-    }
 
-    .cardTitle{
-        padding: 3em 0.5em 0 1em;
-        grid-area: 4 / 1 / 3 / 5;
-    }
-
-    .cardTitle p{
-        font-size: 3.4vw;
-        font-weight: bold;
-        margin-block-start: 0;
-        margin-block-end: 0;
-    }
-
-    .cardContainer{
-        display: block;
-        padding: 0 0 2em 9em;
-    }
-    .divImg{
-        grid-area: 1 / 1 /4 / 5;
-    }
-    .priceCard{
-        grid-area: 4 / 4 / 4 / 5;
-        font-size: 4vw;
-        padding: 3.5em 1em 0 2em;
-    }
-    .priceCard p{
-        font-size: 5.5vw;
-        padding: 0.4em 0 0 0.5em;
-    }
-    .info{
-        width: 93%;
-        font-size: 2.25vw;
-        padding: 0 0 2em 2em;
-    }
-    .info p{
-        margin-block-start: 0.5em;
-        font-size: 2.06vw;
-    }
-    .btnSection{
-        grid-area: 6 / 1 / 6 / 5;
-        padding-top: 7.3em;
-    }
-    .btnSection a {
-        width: 332px;
-        height: 70px;
-        font-size: 2.7vw;
-    }
-    .blockText{
+    /*.blockText{
         width: 75%;
         padding-left: 0;
     }
     .coachText{
-        font-size: 4vw;
+        font-size: 3.3vw;
     }
     .blockCoaching{
-        padding: 0 0 2em 7.5em;
+        padding: 0 0 2em 5.5em;
     }
     .coachFlex{
         display: block;
     }
     .coachImg{
-        padding-block-start: 58em;
+        padding-block-start: 32.3em;
+        width: 50%;
+        height: 50%;
     }
 
     .coachFlex img{
-        width: 40em;
+        width: 22em;
         margin-left: 8.2em;
     }
+
+    .coachingTitle{
+        font-size: 7.3vw;
+    }
+    .flex-club {
+        flex-direction: column;
+    }*/
+
+    .map-sandwich {
+        margin-bottom: 20px;
+    }
 }
+
 
 
 /*END BODY*/
