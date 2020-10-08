@@ -16,7 +16,7 @@
     <div class="inlineElements ">
             <div class="carre">
             </div>
-            <img class="imgPresentation" src="https://i.postimg.cc/vHdLjDFZ/imgpres3.png" alt="##">
+            <img class="imgPresentation" src="https://i.postimg.cc/0jp32yRP/orgranisme.png" alt="##">
     </div>
 </div>
 <hr>
