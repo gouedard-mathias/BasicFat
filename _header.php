@@ -7,16 +7,16 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="index.php#find_a_club">Club</a>
+                <a href="index.php#presentation">Présentation</a>
             </li>
             <li>
                 <a href="index.php#tarif">Tarifs</a>
             </li>
             <li>
-                <a href="index.php#presentation">Présentation</a>
+                <a href="index.php#coaching">Coaching</a>
             </li>
             <li>
-                <a href="index.php#coaching">Coaching</a>
+                <a href="index.php#find_a_club">Club</a>
             </li>
             <li>
                 <a href="_inscriptionform.php">Inscription</a>

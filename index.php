@@ -8,7 +8,7 @@
 
 <body>
     <?php include("_header.php"); ?>
-    <div class="my-anchor" id="presentation">
+    <div class="my-anchor">
         <?php include('_presentation.php'); ?>
     </div>
     <div class="my-anchor" id="tarif">
