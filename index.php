@@ -32,5 +32,6 @@
         <?php include('_footer.php'); ?>
     </footer>
 </body>
+
 </html>
 

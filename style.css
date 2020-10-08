@@ -933,9 +933,7 @@ footer {
     display: flex;
     border-radius: 10px;
     justify-content: space-between;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+
 }
 .footer-copy li {
     list-style: none;
@@ -1014,7 +1012,7 @@ footer {
         text-align: center;
     }
     .followUsLogo img {
-        width: 18%;
+        width: 7%;
     }
     .partnerTitle {
         text-align: center;
@@ -1022,12 +1020,12 @@ footer {
         color: coral;
     }
     .partnerLogo {
-        margin-top: 5px;
+        margin-top: 1px;
         display: block;
         text-align: center;
     }
     .partnerLogo img{
-        width: 15%;
+        width: 10%;
         display: inline-flex;
     }
 }
