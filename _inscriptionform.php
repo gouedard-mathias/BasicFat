@@ -23,7 +23,7 @@
         <div>
             <form class="form_inscription" action="_inscriptionresult.php" >
                 <fieldset class="fieldset_inscription">
-                    <legend class="inscription_legend"><h2>Inscris-toi !</h2></legend>
+                    <legend class="inscription_legend"><h3>Inscris-toi !</h3></legend>
 
                     <select class="user_genre" id="user_genre">
                         <option>M.</option>
