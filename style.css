@@ -619,6 +619,8 @@ iframe{
 .div_inscription_button {
     display: flex;
     justify-content : center;
+    z-index: 1000;
+    position: relative;
 }
 
 .inscription_button {
