@@ -459,12 +459,14 @@ iframe{
 
 .coachImg{
     display: flex;
-
 }
 
 .coachText{
     margin: 20px;
+}
 
+.coach-img{
+    border-radius: 25em;
 }
 
 @media screen and (max-width:1200px) {
@@ -534,6 +536,16 @@ iframe{
 
     .map-sandwich {
         margin-bottom: 20px;
+    }
+    .flexElements{
+        flex-direction: column;
+    }
+    .coach-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .coachText{
+        text-align: center;
     }
 }
 
