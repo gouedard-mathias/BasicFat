@@ -18,12 +18,12 @@
 <div>
     <h3 class="partnerTitle">PARTENAIRES</h3>
     <div class="partnerLogo">
-        <a href="#" type="img"><img src="img/PARTENAIRE/mcdo.png" alt="macdo"></a>
-        <a href="#" type="img"><img src="img/PARTENAIRE/bkg.png" alt="burger king"></a>
-        <a href="#" type="img"><img src="img/PARTENAIRE/otacos%20copie.png" alt="otacos"></a>
-        <a href="#" type="img"><img src="img/PARTENAIRE/coca%20copie.png" alt="coca"></a>
-        <a href="#" type="img"><img src="img/PARTENAIRE/kfc.png" alt="kfc"></a>
-        <a href="#" type="img"><img src="img/PARTENAIRE/fg%20copie.png" alt="fg"></a>
+        <a href="#"><img src="img/PARTENAIRE/mcdo.png" alt="macdo"></a>
+        <a href="#"><img src="img/PARTENAIRE/bkg.png" alt="burger king"></a>
+        <a href="#"><img src="img/PARTENAIRE/otacos%20copie.png" alt="otacos"></a>
+        <a href="#"><img src="img/PARTENAIRE/coca%20copie.png" alt="coca"></a>
+        <a href="#"><img src="img/PARTENAIRE/kfc.png" alt="kfc"></a>
+        <a href="#"><img src="img/PARTENAIRE/fg%20copie.png" alt="fg"></a>
     </div>
 </div>
 
