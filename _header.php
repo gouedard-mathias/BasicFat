@@ -1,7 +1,7 @@
 <header>
     <nav>
         <div class="logo_container">
-            <a href="index.php">
+            <a href="index.php#slider">
                 <img src="https://i.postimg.cc/1XCXt1zn/logo-copie-1.png" alt="logo" class="logo">
             </a>
         </div>
