@@ -8,27 +8,32 @@
 
 <body>
     <?php include('_header.php'); ?>
-    <div>
-        <?php include('_presentation.php'); ?>
+    <div class="animation">
+        <?php include('_background.php'); ?>
     </div>
-    <div class="my-anchor" id="tarif">
-        <?php include('_prices.php'); ?>
+    <div class="page">
+        <div>
+            <?php include('_presentation.php'); ?>
+        </div>
+        <div class="my-anchor" id="tarif">
+            <?php include('_prices.php'); ?>
+        </div>
+        <div class="my-anchor" id="coaching">
+            <?php include('_coaching.php'); ?>
+        </div>
+        <div class="my-anchor" id="find_a_club">
+            <?php include('_findaclub.php'); ?>
+        </div>
+        <div class="my-anchor" id="inscription">
+            <?php include('_inscription.php'); ?>
+        </div>
+        <div class="my-anchor" id="contact">
+            <?php include("_contact.php"); ?>
+        </div>
+        <footer>
+            <?php include('_footer.php'); ?>
+        </footer>
     </div>
-    <div class="my-anchor" id="coaching">
-        <?php include('_coaching.php'); ?>
-    </div>
-    <div class="my-anchor" id="find_a_club">
-        <?php include('_findaclub.php'); ?>
-    </div>
-    <div class="my-anchor" id="inscription">
-        <?php include('_inscription.php'); ?>
-    </div>
-    <div class="my-anchor" id="contact">
-        <?php include("_contact.php"); ?>
-    </div>
-    <footer>
-        <?php include('_footer.php'); ?>
-    </footer>
 </body>
 
 </html>

@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>$Title$</title>
-    <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <?php include("_header.php"); ?>
