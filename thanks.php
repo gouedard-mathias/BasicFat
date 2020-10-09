@@ -22,6 +22,6 @@
     <img  src= "https://i.postimg.cc/bJt0CxGw/thanks-img.jpg" alt="photo d'un homme qui tiens un burger" class="img_thanks">
 </div>
 
-<?php include("_footer.php"); ?>
+
 </body>
 </html>

@@ -142,7 +142,7 @@ nav .burger{
 nav .burger div{
     width: 30px;
     height: 5px;
-    background-color: var(--textColor);
+    background-color: black;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -641,10 +641,10 @@ iframe{
 
     .coachingTitle{
         font-size: 7.3vw;
-    }
+    }*/
     .flex-club {
         flex-direction: column;
-    }*/
+    }
     .map-sandwich {
         margin-bottom: 20px;
     }
